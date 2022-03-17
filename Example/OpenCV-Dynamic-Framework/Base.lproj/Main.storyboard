@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="CVViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DemoImage" translatesAutoresizingMaskIntoConstraints="NO" id="T7D-JR-hBu">
+                                <rect key="frame" x="59.5" y="70" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="PWF-tE-aYF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fag-ax-g1Y">
+                                <rect key="frame" x="158" y="40" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cropped" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yZ-yJ-pE6">
+                                <rect key="frame" x="154" y="358" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1IP-uS-6ks">
+                                <rect key="frame" x="137.5" y="387" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aPS-ad-BBe"/>
+                                    <constraint firstAttribute="width" constant="100" id="dgv-Cp-EaU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7yZ-yJ-pE6" firstAttribute="top" secondItem="T7D-JR-hBu" secondAttribute="bottom" constant="32" id="3kj-tk-2mP"/>
+                            <constraint firstItem="T7D-JR-hBu" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="53s-e2-vz5"/>
+                            <constraint firstItem="fag-ax-g1Y" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="40" id="G22-Lg-Yaw"/>
+                            <constraint firstItem="1IP-uS-6ks" firstAttribute="top" secondItem="7yZ-yJ-pE6" secondAttribute="bottom" constant="8" id="dYO-br-3jJ"/>
+                            <constraint firstItem="1IP-uS-6ks" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="lwW-cQ-uv3"/>
+                            <constraint firstItem="7yZ-yJ-pE6" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="sFV-XB-k2q"/>
+                            <constraint firstItem="fag-ax-g1Y" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="sGH-Do-QOA"/>
+                            <constraint firstItem="T7D-JR-hBu" firstAttribute="top" secondItem="fag-ax-g1Y" secondAttribute="bottom" constant="9" id="yZW-vk-djx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cropped" destination="1IP-uS-6ks" id="CtP-J3-jDN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DemoImage" width="256" height="256"/>
+    </resources>
+</document>

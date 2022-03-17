@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'OpenCV-Dynamic-Framework_Example' do
+  pod 'OpenCV-Dynamic-Framework', :path => '../'
+
+  target 'OpenCV-Dynamic-Framework_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
