@@ -1,14 +1,12 @@
 # OpenCV-Dynamic-Framework
 
 This is a prebuilt OpenCV framework for iOS. It is built as a dynamic link library and 
-can also be used as a dependency of another Pod.
+can also be used as a dependency of a Pod.
 
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
