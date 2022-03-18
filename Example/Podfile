@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '11.1'
 
 target 'OpenCV-Dynamic-Framework_Example' do
   pod 'OpenCV-Dynamic-Framework', :path => '../'

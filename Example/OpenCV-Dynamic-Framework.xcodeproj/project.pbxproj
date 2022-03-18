@@ -252,9 +252,6 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "eddy-lau";
 				TargetAttributes = {
-					6003F589195388D20070C39A = {
-						DevelopmentTeam = NRZK3EVP4Z;
-					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -503,7 +500,7 @@
 			baseConfigurationReference = 77ADAAD577F3669E721A9C44 /* Pods-OpenCV-Dynamic-Framework_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NRZK3EVP4Z;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCV-Dynamic-Framework/OpenCV-Dynamic-Framework-Prefix.pch";
 				INFOPLIST_FILE = "OpenCV-Dynamic-Framework/OpenCV-Dynamic-Framework-Info.plist";
@@ -520,7 +517,7 @@
 			baseConfigurationReference = 5CD872ABDCB03DAA7D59B4C6 /* Pods-OpenCV-Dynamic-Framework_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NRZK3EVP4Z;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenCV-Dynamic-Framework/OpenCV-Dynamic-Framework-Prefix.pch";
 				INFOPLIST_FILE = "OpenCV-Dynamic-Framework/OpenCV-Dynamic-Framework-Info.plist";
