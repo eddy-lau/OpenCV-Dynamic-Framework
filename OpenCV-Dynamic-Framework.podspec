@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => '3-clause BSD', :file => 'LICENSE' } 
   spec.author       = "https://opencv.org/" 
   spec.platform     = :ios
-  spec.ios.deployment_target = "11.1"
+  spec.ios.deployment_target = "11.0"
   spec.source       = { 
       :git => "https://github.com/eddy-lau/OpenCV-Dynamic-Framework.git", 
       :tag => "#{spec.version.to_s}" 
@@ -17,12 +17,12 @@ Pod::Spec.new do |spec|
   ./extract.sh
   CMD
 
-  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
-  spec.source_files = "opencv2.framework/Headers/**/*{.h,.hpp}"
-  spec.preserve_paths = "opencv2.framework"
-  spec.vendored_frameworks = "opencv2.framework"
+  spec.source_files = "opencv2.xcframework/ios-arm64/opencv2.framework/Headers/**/*{.h,.hpp}"
+  spec.preserve_paths = "opencv2.xcframework"
+  spec.vendored_frameworks = "opencv2.xcframework"
   spec.requires_arc = false
 	spec.ios.frameworks = [
     "AssetsLibrary",

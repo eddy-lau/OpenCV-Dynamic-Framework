@@ -1,4 +1,2 @@
 #!/bin/bash
-cat opencv2.framework.zip.* > combined.zip
-unzip combined.zip
-rm combined.zip
+unzip opencv2-4.6.0-ios13.xcframework.zip
