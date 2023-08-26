@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		20AD4F6FE1F3F46549885B94 /* Pods_OpenCV_Dynamic_Framework_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CA166AAD1EC561236D9B01 /* Pods_OpenCV_Dynamic_Framework_Tests.framework */; };
 		2C1FC83227E3F01B00AA19F5 /* CVHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FC83127E3F01B00AA19F5 /* CVHelper.mm */; };
-		2CBF66E42A98BA4700697A3F /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF66E32A98BA4700697A3F /* Dummy.swift */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -44,7 +43,6 @@
 		2C1FC83027E3F01B00AA19F5 /* CVHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVHelper.h; sourceTree = "<group>"; };
 		2C1FC83127E3F01B00AA19F5 /* CVHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVHelper.mm; sourceTree = "<group>"; };
 		2CBF66DB2A98B56C00697A3F /* opencv2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = opencv2.xcframework; path = ../opencv2.xcframework; sourceTree = "<group>"; };
-		2CBF66E32A98BA4700697A3F /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		2E711F9EED198CBB6B3AF2C0 /* OpenCV-Dynamic-Framework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "OpenCV-Dynamic-Framework.podspec"; path = "../OpenCV-Dynamic-Framework.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		42FCA2F7AB272061AD9B35E2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		56AA04FB5EA282859D407A81 /* Pods-OpenCV-Dynamic-Framework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV-Dynamic-Framework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OpenCV-Dynamic-Framework_Tests/Pods-OpenCV-Dynamic-Framework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				2CBF66E32A98BA4700697A3F /* Dummy.swift */,
 			);
 			name = "Example for OpenCV-Dynamic-Framework";
 			path = "OpenCV-Dynamic-Framework";
@@ -361,7 +358,6 @@
 			files = (
 				2C1FC83227E3F01B00AA19F5 /* CVHelper.mm in Sources */,
 				6003F59E195388D20070C39A /* CVAppDelegate.m in Sources */,
-				2CBF66E42A98BA4700697A3F /* Dummy.swift in Sources */,
 				6003F5A7195388D20070C39A /* CVViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -527,7 +523,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56AA04FB5EA282859D407A81 /* Pods-OpenCV-Dynamic-Framework_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -553,7 +548,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 602FD1E605E5DA841FC30EE7 /* Pods-OpenCV-Dynamic-Framework_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
