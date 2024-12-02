@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "OpenCV-Dynamic-Framework"
-  spec.version      = "4.8.0-b1"
+  spec.version      = "4.10.0-b1"
   spec.summary      = "OpenCV dynamic framework"
   spec.description  = "From https://github.com/opencv/opencv"
   spec.homepage     = "https://github.com/eddy-lau/OpenCV-Dynamic-Framework.git"
