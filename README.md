@@ -25,4 +25,4 @@ spec.dependency 'OpenCV-Dynamic-Framework'
 
 ## Reference
 
-[How to build OpenCV XCFramework](https://gist.github.com/humblehacker/6a2e38072b0e237de20ba6d1f2efc80f#file-opencv2-4-6-0-ios13-xcframework-zip)
+[How to build OpenCV XCFramework](BUILD)

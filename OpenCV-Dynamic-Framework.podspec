@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "OpenCV-Dynamic-Framework"
-  spec.version      = "4.10.0-b1"
+  spec.version      = "4.10.0"
   spec.summary      = "OpenCV dynamic framework"
   spec.description  = "From https://github.com/opencv/opencv"
   spec.homepage     = "https://github.com/eddy-lau/OpenCV-Dynamic-Framework.git"
@@ -17,7 +17,6 @@ Pod::Spec.new do |spec|
   ./extract.sh
   CMD
 
-  # spec.source_files = "opencv2.xcframework/ios-arm64/opencv2.framework/Headers/**/*{.h,.hpp}"
   spec.preserve_paths = "opencv2.xcframework"
   spec.vendored_frameworks = "opencv2.xcframework"
   spec.requires_arc = false
