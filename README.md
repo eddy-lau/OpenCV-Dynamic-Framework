@@ -25,4 +25,4 @@ spec.dependency 'OpenCV-Dynamic-Framework'
 
 ## Reference
 
-[How to build OpenCV XCFramework](BUILD)
+[How to build OpenCV XCFramework](BUILD.md)
